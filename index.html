@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jacob BERTRAND</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section home avec contenu -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Jacob BERTRANT</h2>
+            <p>Création de sites web élégants et expériences visuelles sans égales.</p>
+        </div>
+        <!-- Flèche ajoutée ici -->
+        <div class="scroll-down-arrow"></div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Mes Projets</h2>
+        <div class="filter-container">
+            <label for="languageFilter">Filtrer par langage :</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" class="language-filter" value="html"> HTML5</label>
+                <label><input type="checkbox" class="language-filter" value="css"> CSS3</label>
+                <label><input type="checkbox" class="language-filter" value="javascript"> JavaScript</label>
+                <label><input type="checkbox" class="language-filter" value="react"> React.js</label>
+                <label><input type="checkbox" class="language-filter" value="node"> Node.js</label>
+                <label><input type="checkbox" class="language-filter" value="mongodb"> MongoDB</label>
+                <label><input type="checkbox" class="language-filter" value="python"> Python</label>
+                <label><input type="checkbox" class="language-filter" value="angular"> Angular</label>
+                <label><input type="checkbox" class="language-filter" value="vue"> Vue.js</label>
+            </div>
+            <button id="applyFilterBtn" class="apply-btn">Appliquer</button>
+        </div>
+
+        <div class="project-cards">
+            <!-- Projet 1 -->
+            <div class="project-card" value="html css javascript node mongodb" style="background-image: url('imgesiteecommerce.webp');">
+                <div class="overlay">
+                    <h3>Site e-Commerce de Vêtements</h3>
+                    <p>HTML5, CSS3, JavaScript, Node.js, MongoDB</p>
+                    <a href="projet1.html" class="view-more">Voir plus</a>
+                </div>
+            </div>
+            <!-- Projet 2 -->
+            <div class="project-card" value="react node express mongodb websocket" style="background-image: url('todolisttemplate.png');">
+                <div class="overlay">
+                    <h3>Application de To-Do List Collaborative</h3>
+                    <p>React.js, Node.js, Express.js, MongoDB, WebSocket</p>
+                    <a href="projet2.html" class="view-more">Voir plus</a>
+                </div>
+            </div>
+            <!-- Projet 3 -->
+            <div class="project-card" value="react node express mongodb websocket" style="background-image: url('chat.jpg');">
+                <div class="overlay">
+                    <h3>Plateforme de Gestion de Projets Collaboratifs</h3>
+                    <p>React, Node.js, Express, MongoDB, WebSocket</p>
+                    <a href="projet3.html" class="view-more">Voir plus</a>
+                </div>
+            </div>
+            <!-- Projet 4 -->
+            <div class="project-card" value="vue flask sqlite bootstrap api" style="background-image: url('forum.jpg');">
+                <div class="overlay">
+                    <h3>Application de Suivi de Santé Personnelle</h3>
+                    <p>Vue.js, Flask, SQLite, Bootstrap, API d'intégration santé (ex. Google Fit)</p>
+                    <a href="projet4.html" class="view-more">Voir plus</a>
+                </div>
+            </div>
+            <!-- Projet 5 -->
+            <div class="project-card" value="python flask imdb api mongodb" style="background-image: url('blog.jpeg');">
+                <div class="overlay">
+                    <h3>Système de Recommandation de Films</h3>
+                    <p>Python (Flask), API IMDB, Machine Learning, MongoDB</p>
+                    <a href="projet5.html" class="view-more">Voir plus</a>
+                </div>
+            </div>
+            <!-- Projet 6 -->
+            <div class="project-card" value="angular node postgresql chartjs" style="background-image: url('budget.png');">
+                <div class="overlay">
+                    <h3>Application de Gestion de Budget Personnel</h3>
+                    <p>Angular, Node.js, PostgreSQL, Chart.js</p>
+                    <a href="projet6.html" class="view-more">Voir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Compétences</h2>
+        <div class="skills-list">
+            <div class="skill">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+            </div>
+            <div class="skill">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+            </div>
+            <div class="skill">
+                <i class="fab fa-js-square"></i>
+                <span>JavaScript</span>
+            </div>
+            <div class="skill">
+                <i class="fab fa-react"></i>
+                <span>React</span>
+            </div>
+            <div class="skill">
+                <i class="fab fa-node"></i>
+                <span>Node.js</span>
+            </div>
+            <div class="skill">
+                <i class="fas fa-paint-brush"></i>
+                <span>UI/UX Design</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2>Expérience</h2>
+        <div class="experience-items">
+            <div class="experience-item">
+                <div class="experience-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Développeur Senior - TotalEnergie</h3>
+                <p class="date">2019 - Présent</p>
+                <p>Description de l'expérience chez XYZ, création de produits web haut de gamme.</p>
+            </div>
+            <div class="experience-item">
+                <div class="experience-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>Graphiste Web - Cdiscount</h3>
+                <p class="date">2017 - 2019</p>
+                <p>Conception de designs interactifs et de maquettes de sites web.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div class="social-media">
+            <a href="https://www.linkedin.com" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-link">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://dribbble.com" target="_blank" class="social-link">
+                <i class="fab fa-dribbble"></i>
+            </a>
+        </div>
+        <form action="#">
+            <input type="text" placeholder="Votre Nom" required>
+            <input type="email" placeholder="Votre Email" required>
+            <textarea placeholder="Votre Message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        <!-- Nouveau bouton "Télécharger CV" -->
+        <a href="Développeur web fullstack passionné, spécialisé dans la création de solutions robustes et innovantes, alliant front-end dynamique et back-end performant. Je suis à la recherche d’un emploi. (1)" download="CV_Jacob_Bertrand.pdf" class="download-btn">
+            Télécharger CV
+        </a>
+    </section>
+
+    <!-- Point qui suit le curseur -->
+    <div id="cursor"></div>
+
+    <footer>
+        <p>&copy; 2024 Jacob BERTRAND | Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
